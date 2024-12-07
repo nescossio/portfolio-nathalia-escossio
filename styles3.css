@@ -1,0 +1,301 @@
+/* Aluna: Nathalia Escóssio Cavalcante */
+/* RU: 4888825 */
+
+/* 
+Como boa prática, inicio o código removendo qualquer margem e preenchimento para que não haja interferências de estilos iniciais do navegador. O box-sizing definido como border-box garante que as dimensões de elementos incluam as bordas.
+*/
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* 
+Estilização do body: aqui determino a fonte padrão, cor de fundo preta e texto branco e a altura de linha.
+*/
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #000; 
+    color: #fff; 
+    line-height: 1.6; 
+}
+
+/* 
+Estilização do cabeçalho: aqui o cabeçalho é definido como fixo para que não sejam necessários botões de voltar para navegar entre as seções do 'menu'. As demais configurações foram escolhidas para compor o layout (tamanho, cores, alinhamento, padding...).
+*/
+header {
+    background-color: #000;
+    color: #ef9643; 
+    padding: 1rem 2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed; /* Cabeçalho fixado */
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    height: 60px; 
+}
+
+/* 
+Menu de navegação no cabeçalho: usei uma lista não ordenada como um menu horizontal, com espaçamento entre os itens e margem esquerda. 
+*/
+header nav ul {
+    list-style: none; 
+    display: flex; 
+}
+
+
+header nav ul li {
+    margin-left: 1.5rem; 
+}
+
+
+header nav ul li a {
+    color: #ef9643; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+/* 
+Seção de introdução: foi dividida em duas partes principais (texto e imagem) com layout flexível. O fundo escuro e espaçamento interno, como foi definido abaixo, melhoram a separação visual do conteúdo e o torna mais legível. 
+*/
+#intro {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 3rem 2rem; 
+    padding-bottom: 0; 
+    padding-top: 0; 
+    background-color: #1a1a1a; 
+    margin-top: 60px; 
+}
+
+/* 
+Conteúdo textual da introdução: impõe uma largura máxima do texto para evitar linhas muito longas e manter o design chamando atenção para a imagem também.
+*/
+#intro .intro-conteudo {
+    max-width: 40%; 
+}
+
+/* 
+Demais configurações para tamanho de fonte, margem e cor para compor o design.
+*/
+#intro h1 {
+    font-size: 3rem; 
+    margin-bottom: 1rem; 
+    color: #af316a; 
+}
+
+
+#intro p {
+    font-size: 1.2rem; 
+    color: #bbb; 
+}
+
+/* 
+Imagem de introdução: centraliza a imagem visualmente e permite redimensionamento automático. Essa seção também define o tamanho da imagem e `object-fit` faz com que a proporção dela seja mantida.
+*/
+#intro .intro-imagem {
+    width: 50%; 
+    display: flex; 
+    justify-content: center; 
+}
+
+
+#intro .intro-imagem img {
+    width: 120%; 
+    height: 160%; 
+    object-fit: cover;
+}
+
+/* 
+Seção 'Sobre': definição de espaçamento interno, tamanho de fonte, margem, alinhamento de texto e cor para compor o design.
+*/
+#sobre {
+    padding: 3rem 2rem; 
+}
+
+
+#sobre h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: #09e8f8; 
+}
+
+
+#sobre p {
+    font-size: 1.2rem; 
+    color: #bbb; 
+    text-align: justify; 
+}
+
+/* 
+Seção 'Tecnologias e Skills': separada em duas colunas com elementos flexíveis. Detalhes como tamanho de fonte, margem, cor e espaçamento também foram definidos aqui, assim como ao longo de cada seção.
+*/
+#tecnologias-skills {
+    padding: 3rem 2rem; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+}
+
+
+#tecnologias-skills h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem;
+    color: #09e8f8; 
+}
+
+/* 
+Coluna flexível: largura mínima definida para que cada coluna se ajuste bem a telas menores.
+*/
+.column {
+    flex: 1; 
+    min-width: 280px; 
+}
+
+/* 
+Cards individuais: cada cartão contém um ícone e texto, com um design e bordas arredondadas. Borda colorida para destacar os itens de cada card.
+*/
+.card {
+    background-color: #727272; 
+    border: 2px solid #09e8f8; 
+    padding: 1rem; 
+    display: flex; 
+    align-items: center; 
+    gap: 0.5rem; 
+    margin-bottom: 1rem; 
+    border-radius: 10px; 
+}
+
+/* 
+Imagens nos cartões: ícones pequenos para indicar visualmente cada tecnologia ou habilidade.
+*/
+.card img {
+    width: 30px; 
+    height: 30px; 
+}
+
+
+.card h3 {
+    color: white; 
+    font-size: 1rem; 
+}
+
+/* 
+Seções 'Formação': informações com flex-wrap para responsividade.
+*/
+#formação {
+    padding: 3rem 2rem; 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 1rem; 
+}
+
+
+#formação h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: #09e8f8; 
+}
+
+/* 
+Seção 'Projetos', destacando o card para o projeto exibido. Novamente, foram definidas configurações de tamanho de fonte, padding e cores.
+*/
+#projetos {
+    padding: 3rem 2rem; 
+    background-color: #1a1a1a; 
+}
+
+
+#projetos h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: #ef9643; 
+}
+
+
+.projetos-container {
+    display: flex; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+}
+
+/* 
+Card de projeto: imagem com bordas arredondadas. Mais uma vez, foram definidas configurações de alinhamento de texto, padding e cores. Hover foi usado para dar destaque ao passar com o mouse no elemento.
+*/
+.projeto-card {
+    background-color: #333; 
+    border: 2px solid #ef9643; 
+    padding: 1rem; 
+    width: 200px; 
+    text-align: center;
+    border-radius: 10px; 
+}
+
+
+.projeto-card img {
+    transition: transform 0.3s ease; 
+}
+
+
+.projeto-card img:hover {
+    transform: scale(1.05); 
+}
+
+/* 
+Seção de contato, com um formulário e botão estilizado. Campos de entrada e botão ocupam toda a largura para melhora usabilidade e dar preenchimento a tela.
+*/
+#contato {
+    padding: 3rem 2rem; 
+}
+
+
+#contato h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 1rem; 
+    color: #ef9643; 
+}
+
+/* 
+Seção de contato: configurações com campos estilizados com bordas arredondadas.
+O botão muda de cor ao passar o mouse (hover), para dar interatividade. Mais uma vez, há nessa seção definições de cores, padding, margem e etc, assim como foi feito nas seções anteriores desse código.
+*/
+#contato form input,
+#contato form textarea {
+    width: 100%; 
+    padding: 1rem; 
+    margin-bottom: 1rem; 
+    border-radius: 5px; 
+    border: 1px solid #ef9643; 
+    background-color: #333; 
+    color: #fff; 
+}
+
+
+#contato button {
+    background-color: #ef9643; 
+    color: white; 
+    padding: 1rem;
+    width: 100%; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+
+#contato button:hover {
+    background-color: #d67832; 
+}
+
+/* 
+Rodapé:
+Mantém informações centralizadas no final da página.
+*/
+footer {
+    text-align: center; 
+    padding: 2rem; 
+    background-color: #000; 
+    color: white; 
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>       <!-- Aluna: Nathalia Escóssio Cavalcante -->
+<html lang="en">      <!-- RU: 4888825 -->
+<head>
+    <!-- Declaração padrão do HTML5 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título definido para ser exibido na aba do navegador -->
+    <title>Portfolio da Nath</title> 
+    <!-- Definindo o arquivo CSS para estilizar a página -->
+    <link rel="stylesheet" href="styles3.css"> 
+
+    <!-- Estilo interno também usado de forma complementar para estilização -->
+    <style>
+        .container {
+            display: flex; 
+            justify-content: space-between; 
+            gap: 20px;
+        }
+        .column {
+            flex: 1;
+        }
+        .card {
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+            margin-bottom: 10px;
+        }
+        .card img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho contendo logotipo e menu de navegação -->
+    <header>
+        <img src="images/logo.png" alt="Logo" width="50px">
+        <nav>
+            <ul>
+                <!-- Links internos para as seções da página -->
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#formação">Formação</a></li>
+                <li><a href="#tecnologias-skills">Tecnologias & Skills</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de introdução com frase de apresentação -->
+    <section id="intro">
+        <div class="intro-conteudo">
+            <h1>Oi, eu sou Nathalia Cavalcante</h1> 
+            <p>Quality Assurance, apaixonada por garantir a qualidade de projetos digitais e sempre em busca de novas tecnologias.</p>
+        </div>
+        <div class="intro-imagem">
+            <!-- Imagem que representa a mim -->
+            <img src="images/me_3.png" alt="Minha Imagem"> 
+        </div>
+    </section>
+
+    <!-- Seção "Sobre" com uma descrição detalhada sobre mim -->
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>
+            Sou uma Quality Assurance apaixonada pelo que faz! No meu dia a dia, testo aplicações, garanto a qualidade dos projetos e, claro, estou sempre de olho em novas tecnologias — aprender é quase uma segunda natureza para mim. Adoro trabalhar em equipe, e mais ainda quando o time é diverso e cheio de gente de diferentes partes do mundo. Trabalhar com pessoas de outros países traz uma riqueza de experiências que me inspira e me motiva. Sou também uma entusiasta do back end, com planos de me especializar nessa área num futuro próximo. Atualmente, estou aprofundando meus conhecimentos em Python. Ah, e nas horas vagas, você pode me encontrar junto meu fiel escudeiro, o Gato Coder, trabalhando em design para aplicações mobile ou no meu jardim — jardinagem é um dos meus hobbies, onde encontro um pouco de paz e conexão com a natureza. E, claro, entre uma planta e outra, não posso viver sem café! Um bom café forte é sempre bem-vindo!
+        </p>
+    </section>
+
+    <!-- Seção com minha formação acadêmica -->
+    <section id="formação" class="container">
+        <div class="column">
+            <h2>Formação</h2>
+            <!-- Qualificações acadêmicas obtidas por mim -->
+            <div class="card">
+                <img src="images/graduation.png" alt="Ícone Graduação">
+                <h3>Graduação - Engenharia de Materiais</h3>
+            </div>
+            <div class="card">
+                <img src="images/master-degree.png" alt="Ícone Mestrado">
+                <h3>Mestrado - Ciência e Tecnologia de Materiais</h3>
+            </div>
+            <div class="card">
+                <img src="images/graduation.png" alt="Ícone Graduação">
+                <h3>Graduação - Análise e Desenvolvimento de Sistemas</h3>
+            </div>
+            <div class="card">
+                <img src="images/expert.png" alt="Ícone Especialização">
+                <h3>Especialização - Qualidade de Software</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de tecnologias e habilidades -->
+    <section id="tecnologias-skills" class="container">
+        <div class="column">
+            <h2>Tecnologias</h2>
+            <!-- Tecnologias que domino - Hard Skills -->
+            <div class="card">
+                <img src="images/html.png" alt="HTML">
+                <h3>HTML</h3>
+            </div>
+            <div class="card">
+                <img src="images/css.png" alt="CSS">
+                <h3>CSS</h3>
+            </div>
+            <div class="card">
+                <img src="images/python.png" alt="Python">
+                <h3>Python</h3>
+            </div>
+            <div class="card">
+                <img src="images/pytest.png" alt="Pytest">
+                <h3>Pytest</h3>
+            </div>
+            <div class="card">
+                <img src="images/mysql.png" alt="MySQL">
+                <h3>MySQL</h3>
+            </div>
+            <div class="card">
+                <img src="images/postgressql.png" alt="Postgres">
+                <h3>Postgres</h3>
+            </div>
+            <div class="card">
+                <img src="images/vs_code.png" alt="VS Code">
+                <h3>VS Code</h3>
+            </div>
+            <div class="card">
+                <img src="images/figma.png" alt="Figma">
+                <h3>Figma</h3>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Skills</h2>
+            <!-- Habilidades profissionais - Soft Skills -->
+            <div class="card">
+                <img src="images/team.png" alt="Colaboração">
+                <h3>Colaboração</h3>
+            </div>
+            <div class="card">
+                <img src="images/iteracao.png" alt="Scrum">
+                <h3>Scrum</h3>
+            </div>
+            <div class="card">
+                <img src="images/kanban.png" alt="Kanban">
+                <h3>Kanban</h3>
+            </div>
+            <div class="card">
+                <img src="images/lingua-estrangeira.png" alt="Inglês Fluente">
+                <h3>Inglês Fluente</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção com projeto desenvolvido por mim -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            
+            <div class="projeto-card">
+                <h3>PetWorld</h3>
+                <a href="https://www.figma.com/proto/o1ZdtgbeJEDywV3Q0OoXmk/app_PetWorld?node-id=12-8&node-type=canvas&t=7DfqurDz4qyUkvBS-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=45%3A118&show-proto-sidebar=1" target="_blank">
+                    <img src="images/petworld.png" alt="Projeto PetWorld" style="width: 100%; border-radius: 10px;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção para contato contendo formulário -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="#">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Nathalia Cavalcante</p>
+    </footer>
+</body>
+</html>
